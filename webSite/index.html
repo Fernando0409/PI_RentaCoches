@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Drivus - Inicio</title>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -13,14 +15,97 @@
             <div class="toggle-btn">
                 <span>&#9776;</span>
             </div>
-            <ul>
-                <li>Inicio</li>
-                <li>Perfil</li>
-                <li>Autos</li>
-                <li>Empleados</li>
-                <li>Cerrar sesión</li>
-            </ul>
+            <a href="#about"> <i class='bx bx-home' ></i> Incio</a>
+            <a href="#services"><i class='bx bx-user' ></i>Perfil</a>
+            <button class="dropdown-btn"> <i class='bx bx-car ' ></i></i> Autos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Inventario</a>
+                <a href="#">Registro</a>
+            </div>
+            <button class="dropdown-btn"> <i class='bx bxs-user-plus' ></i> Socios
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Lista</a>
+                <a href="#">Nuevo empleado</a>
+            </div>
+            <button> <i class='bx bx-log-out '></i> Cerrar sesion</button>
+        </div> 
+
+        <div class="container">
+            <div class="barraLateral">
+                <div class="elementos">
+                    <a href=""><i class='bx bxs-bell bx-sm' id="notificaciones"></i></a>
+                    <a href=""><p id="nombre">Lorem Lorencio</p></a>
+                    <a href=""><i id="user" class='bx bx-user bx-sm'></i></a>
+                </div>
+            </div>
+            <div id="formulario">
+                <div id="cabecera"><h3>Perfil</h3></div>
+                <form action="#" method="post">
+                    <div id="fotografia">
+                        <img id="img_usuario" src="resources/img/user_icon.png" alt="Usuario">
+                        <label id="text" for="imagenUser">Seleccionar foto</label>
+                        <input type="file" name="" id="imagenUser">
+                    </div>
+                    <div class="inputsForm">
+                        <div class="row1">
+                            <div class="elemento1">
+                                <label for="aPaterno" class="label">Apellido Paterno</label>
+                                <input type="text" name="" id="" class="input">    
+                            </div>
+                            <div class="elemento2">
+                                <label for="aPaterno" class="label">Apellido Materno</label>
+                                <input type="text" name="" id="" class="input">     
+                            </div>
+                            <div class="elemento2">
+                                <label for="aPaterno" class="label">Nombre</label>
+                                <input type="text" name="" id="" class="input">
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="elemento1">
+                                <label for="aPaterno" class="label">Email</label>
+                                <input type="text" name="" id="" class="input">
+                            </div>
+                            <div class="elemento2">
+                                <label for="aPaterno" class="label">Nacimiento</label>
+                                <input type="text" name="" id="" class="input">    
+                            </div>
+                            <div class="elemento3">
+                                <label for="aPaterno" class="label">Telefono</label>
+                                <input type="text" name="" id="" class="input">
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="elemento1">
+                                <label for="aPaterno" class="label">Colonia</label> 
+                                <input type="text" name="" id="" class="input">
+                            </div>
+                            <div class="elemento2">
+                                <label for="aPaterno" class="label">Calle</label> 
+                                <input type="text" name="" id="" class="input">    
+                            </div>
+                            
+                            <div class="elemento3">
+                                <label for="aPaterno" class="label">Numero de casa</label>
+                                <input type="text" name="" id="" class="input">
+                            </div>
+
+                            <div class="elemento4">
+                                <label for="cp" class="label">Codigo Postal</label>
+                                <input type="text" name="" id="" class="input">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="update" type="submit">Actualizar</button>
+                    <button id="cancel" type="reset">Cancelar</button>
+                </form>
+            </div>
         </div>
+
         <!-- JavaScript-->
         <script src="js/main.js"></script>
     </body>
