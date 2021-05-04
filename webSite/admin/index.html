@@ -8,6 +8,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleInicioadmin.css">
+        <script src="../js/chart.js"></script>
+
         <title>Drivus - Inicio</title>
     </head>
     <body>
@@ -33,7 +36,24 @@
             </div>
             <button> <i class='bx bx-log-out '></i> Cerrar sesion</button>
         </div>
-
+        <div class="container">
+            <div class="barraLateral">
+                <div class="elementos">
+                    <a href=""><i class='bx bxs-bell bx-sm' id="notificaciones"></i></a>
+                    <a href=""><p id="nombre">Lorem Lorencio</p></a>
+                    <a href=""><i id="user" class='bx bx-user bx-sm'></i></a>
+                </div>
+            </div>
+            <div class="miniContainer">
+                <div id="cabecera"><h3>Bienvenido</h3></div>
+                <div class="graficas">
+                    <canvas id="myChart" width="200" height="100"></canvas>
+                    <canvas id="myChart1" width="200" height="100"></canvas>
+                    <canvas id="myChart2" width="200" height="100"></canvas>
+                </div>
+            </div>
+        </div>
         <script src="../js/main.js"></script>
+        <script src="../js/charts.js"></script>
     </body>
 </html>
