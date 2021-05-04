@@ -5,9 +5,20 @@
     text-align: center;
 }
 
-.miniContainer .graficas{
-    position: inherit;
-    border: solid;
-    display: inline-block;
+#miniContainer{
+    position: relative;
+    margin-left: 3%;
+    margin-right: 7%;
+    background-color: white;
+    margin-top: 1%;
 }
 
+.graficas{
+    text-align: center;
+}
+
+#grafica1, #grafica2, #grafica3, #grafica3{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+}
