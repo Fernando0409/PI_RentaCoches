@@ -17,6 +17,7 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     left: -17%;
     transition: all 500ms linear;
+    z-index: 100;
 }
 
 #sidebar.active {
@@ -142,7 +143,7 @@ form{
     background-color: #2a0845;
     width: 15%;
     display: inline;
-    margin-left: 78%;
+    margin-left: 75%;
     margin-top: 1%;
 }
 
