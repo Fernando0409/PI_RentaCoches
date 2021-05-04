@@ -2,27 +2,33 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.drivus">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="DrivUs"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".RegistroFinalUsuarioEmail"></activity>
+        <activity android:name=".Registro_Confirmar" />
+        <activity android:name=".Registro_Email_Final" />
+        <activity android:name=".Registro_Telefono" />
         <activity
             android:name=".Pantalla_Principal"
-            android:label="@string/title_activity_pantalla__principal">
+            android:label="@string/title_activity_pantalla__principal" />
+        <activity android:name=".Registro_Genero" />
+        <activity android:name=".Registro_FechaNacimiento" />
+        <activity android:name=".Registro_Nombre" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Registro_Email_Final" />
-        <activity android:name=".Registro_Genero" />
-        <activity android:name=".Registro_FechaNacimiento" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
         </activity>
     </application>
 
