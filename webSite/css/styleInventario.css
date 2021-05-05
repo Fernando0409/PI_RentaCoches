@@ -1,0 +1,80 @@
+.container #cabecera{
+    background-color: #2a0845;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+/**************************** Tabla ***********************/
+#miniContainer .tabla{
+    margin-top: 2%;
+}
+
+#miniContainer #datosCoche{
+    margin-top: 20px;
+
+}
+
+/*#cabeceraCoche h3{
+    border: solid 5px red;
+}*/
+
+#miniContainer .tabla table{
+    border-radius: 5px;
+    margin-top: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+#miniContainer .tabla table th, #miniContainer .tabla table td{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#miniContainer #datosCoche #cabeceraCoche{
+    background-color: #2a0845;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 10px;
+    width:auto;
+}
+
+#infoCoche{
+    border: #707070 solid .5px;
+    border-radius: 8px;
+    width: 98%;
+}
+
+#infoCoche .filas{
+    display:inline;
+    width:fit-content;
+    margin-left: 120px;
+    }
+
+.elemento1 p, .elemento2 p{
+    display: inline;
+    margin-top: 1%;
+    margin-left: 5px;
+    width:fit-content;
+}
+
+#imgCoche{
+    position:static;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20%;
+}
+
+/******* Botones de la tabla ******/
+
+#miniContainer .tabla tr td>button{
+    border: solid 1px black;
+    outline: none;
+    color: white;
+    background-color: green;
+    width:100%;
+    margin: auto;
+}

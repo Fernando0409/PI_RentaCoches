@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleInventario.css">
         <title>Drivus - Inventario</title>
     </head>
     <body>
@@ -32,6 +33,115 @@
                 <a href="#">Nuevo Socio</a>
             </div>
             <button><i class='bx bx-log-out '></i> Cerrar sesion</button>
+        </div>
+        <div class="container">
+            <div class="barraLateral">
+                <div class="elementos">
+                    <a href=""><i class='bx bxs-bell bx-sm' id="notificaciones"></i></a>
+                    <a href=""><p id="nombre">Lorem Lorencio</p></a>
+                    <a href=""><i id="user" class='bx bx-user bx-sm'></i></a>
+                </div>
+            </div>
+            <div id="miniContainer">
+                <div id="cabecera"><h3>Inventario</h3></div>
+                <div class="tabla">
+                    <table border="1">
+                        <tr>
+                            <th>Folio</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Año</th>
+                            <th>Cambio</th>
+                            <th>Sucursal</th>
+                            <th>Estado</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Volkvagen</td>
+                            <td>Jetta</td>
+                            <td>2019</td>
+                            <td>Automatico</td>
+                            <td>Barrio 3</td>
+                            <td>Disponible</td>
+                            <td>$100,000</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>0002</td>
+                            <td>Dogde</td>
+                            <td>RAM</td>
+                            <td>2018</td>
+                            <td>Automatico</td>
+                            <td>Salagua</td>
+                            <td>Dañado</td>
+                            <td>$60,000</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>Honda</td>
+                            <td>CR-V</td>
+                            <td>2020</td>
+                            <td>Automatico</td>
+                            <td>Salagua</td>
+                            <td>Mantenimiento</td>
+                            <td>$45,000</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>0004</td>
+                            <td>Renault</td>
+                            <td>Duster</td>
+                            <td>2017</td>
+                            <td>Manual</td>
+                            <td>Barrio 3</td>
+                            <td>Rentado</td>
+                            <td>$50,000</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="datosCoche">
+                    <div id="cabeceraCoche"><h3>Detalles del coche</h3></div>
+                    <div id="infoCoche">
+                        <img id="imgCoche" src="../resources/img/volkvagen.jpg" alt="" width="350px" height="180px">
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p>Marca:</p> <p>Volkswagen</p>
+                            </div>
+                            <div class="elemento2">
+                                <p>Transmision:</p> <p>Automatico</p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p>Modelo:</p> <p>Jetta</p>
+                            </div>
+                            <div class="elemento2">
+                                <p>Motor:</p> <p>1.4HP</p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p>Año:</p> <p>2020</p>
+                            </div>
+                            <div class="elemento2">
+                                <p>Carroceria:</p> <p>Sendan</p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p>Combustible:</p> <p>Disel</p>
+                            </div>
+                            <div class="elemento2">
+                                <p>Velocidad:</p> <p>400km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="../js/main.js"></script>
