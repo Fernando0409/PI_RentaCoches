@@ -10,9 +10,8 @@
     margin-top: 2%;
 }
 
-#miniContainer #datosCoche{
+#miniContainer #datosCoche, #miniContainer #datosSocio{
     margin-top: 20px;
-
 }
 
 /*#cabeceraCoche h3{
@@ -33,35 +32,39 @@
     padding-right: 5px;
 }
 
-#miniContainer #datosCoche #cabeceraCoche{
+#miniContainer #datosCoche #cabeceraCoche, #miniContainer #datosSocio #cabeceraSocio{
     background-color: #2a0845;
     color: white;
     padding: 1%;
     text-align: center;
-    margin-bottom: 10px;
     width:auto;
 }
 
-#infoCoche{
+#infoCoche, #infoSocio{
     border: #707070 solid .5px;
     border-radius: 8px;
     width: 98%;
 }
 
-#infoCoche .filas{
+#infoCoche .filas, #infoSocio .filas{
     display:inline;
     width:fit-content;
     margin-left: 120px;
-    }
+}
+
+#datosSocio .filas .elemento1 .negritas, #datosSocio .filas .elemento2 .negritas {
+    font-weight: bold;
+    font-style: oblique;
+}
 
 .elemento1 p, .elemento2 p{
     display: inline;
     margin-top: 1%;
     margin-left: 5px;
-    width:fit-content;
+    text-align: center;
 }
 
-#imgCoche{
+#imgCoche, #imgSocio{
     position:static;
     float: right;
     margin-top: 5px;
