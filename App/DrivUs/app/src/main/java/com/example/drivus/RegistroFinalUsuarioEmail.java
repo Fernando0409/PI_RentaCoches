@@ -2,6 +2,7 @@ package com.example.drivus;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,7 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
         bnConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ingresar_datos("http://192.168.1.74/drivus_app_php/registro_ususarios.php");
+                ingresar_datos("http://192.168.1.75/Driveus/registro_ususariosp.php");
             }
         });
     }
@@ -68,7 +69,15 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
                 StringRequest respuesta = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(RegistroFinalUsuarioEmail.this, nombre_user + ApellidoP_user + ApellidoM_user + fecha_user + genero_user + calle_user + numCasa_user + colonia_user + cp_user + telefono_user + etUser_Email + etUser_password,Toast.LENGTH_LONG).show();
+                        if (response.equals("1")){
+                            Intent i = new Intent(RegistroFinalUsuarioEmail.this, inicioP.class);
+                            startActivity(i);
+
+                            Toast.makeText(RegistroFinalUsuarioEmail.this, nombre_user + ApellidoP_user + ApellidoM_user + fecha_user + genero_user + calle_user + numCasa_user + colonia_user + cp_user + telefono_user + etUser_Email + etUser_password,Toast.LENGTH_LONG).show();
+                        }else {
+                            Toast.makeText(RegistroFinalUsuarioEmail.this,"eror al registrarse",Toast.LENGTH_SHORT).show();
+                        }
+
                     }
                 }, new Response.ErrorListener() {
                     @Override

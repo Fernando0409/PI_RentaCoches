@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Registro_Direccion"></activity>
+        <activity android:name=".inicioP"></activity>
+        <activity android:name=".Registro_Direccion" />
         <activity android:name=".RegistroFinalUsuarioEmail" />
-        <activity android:name=".Registro_Confirmar" />
         <activity android:name=".Registro_Telefono" />
         <activity
             android:name=".Pantalla_Principal"
