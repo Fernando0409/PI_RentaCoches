@@ -1,3 +1,4 @@
+/**************************** Graficas **************************/
 .container #cabecera{
     background-color: #2a0845;
     color: white;
@@ -20,5 +21,31 @@
 #grafica1, #grafica2, #grafica3, #grafica3{
     display: inline-block;
     margin-top: 10px;
+    padding: 10px;
+}
+
+/******************* Tabla *****************************/
+#miniContainer .tabla{
+    margin-top: 2%;
+}
+
+#miniContainer .tabla .cabecera {
+    text-align: center;
+    background-color: #2a0845;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+
+#miniContainer .tabla table{
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 14px;
+    font-weight: bolder;
+}
+
+#miniContainer .tabla table th, #miniContainer .tabla table td{
     padding: 10px;
 }
