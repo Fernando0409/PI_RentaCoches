@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Inicio_Prueba"></activity>
+
+        <activity android:name=".Inicio_Prueba"/>
         <activity android:name=".Registro_Direccion" />
         <activity android:name=".RegistroFinalUsuarioEmail" />
         <activity android:name=".Registro_Telefono" />

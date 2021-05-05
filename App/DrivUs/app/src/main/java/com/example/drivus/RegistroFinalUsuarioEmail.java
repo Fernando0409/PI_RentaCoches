@@ -70,10 +70,8 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         if (response.equals("1")){
-                            Intent i = new Intent(RegistroFinalUsuarioEmail.this, inicioP.class);
+                            Intent i = new Intent(RegistroFinalUsuarioEmail.this, Inicio_Prueba.class);
                             startActivity(i);
-
-                            Toast.makeText(RegistroFinalUsuarioEmail.this, nombre_user + ApellidoP_user + ApellidoM_user + fecha_user + genero_user + calle_user + numCasa_user + colonia_user + cp_user + telefono_user + etUser_Email + etUser_password,Toast.LENGTH_LONG).show();
                         }else {
                             Toast.makeText(RegistroFinalUsuarioEmail.this,"eror al registrarse",Toast.LENGTH_SHORT).show();
                         }
