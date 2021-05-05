@@ -56,19 +56,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 @Override
                 public void onResponse(String response) {
                     try {
-                        JSONObject jsonObject = new JSONObject(response);
-                        String idUser = jsonObject.getString("usr_id");
-                        String emailUser = jsonObject.getString("usr_email");
-                        String passwordUser = jsonObject.getString("usr_password");
+                        JSONObject login = new JSONObject(response);
+                        String emailUser = login.getString("correo");
+                        String passwordUser = login.getString("contraseña");
                         if (emailUser.equals(User_Email) && passwordUser.equals(User_Pass)) {
-                            Intent inicio_activity = new Intent(LoginActivity.this, Registro_Genero.class);
+                            Intent inicio_activity = new Intent(LoginActivity.this, Inicio_Prueba.class);
                             startActivity(inicio_activity);
-                            finish();
                         } else {
                             Toast.makeText(LoginActivity.this, "Usuario o Contraseña Incorrecta", Toast.LENGTH_LONG).show();
                         }
                     } catch (JSONException e) {
-                        Toast.makeText(LoginActivity.this, "No existe el Usuario o Contraseña", Toast.LENGTH_LONG).show();
+                        e.printStackTrace();
                     }
                 }
             }, new Response.ErrorListener() {
@@ -95,7 +93,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btnLogin:
-                validar_usuarios("http://192.168.1.71/drivus_app_php/login.php");
+                validar_usuarios("http://192.168.1.74/drivus_app_php/login.php");
                 break;
 
             case R.id.txtRegistrar:

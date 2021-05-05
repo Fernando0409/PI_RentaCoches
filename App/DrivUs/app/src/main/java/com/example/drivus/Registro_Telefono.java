@@ -23,6 +23,8 @@ public class Registro_Telefono extends AppCompatActivity {
         etTel_user = (EditText) findViewById(R.id.editTelefono);
         btnSiguiente = (Button) findViewById(R.id.btnNext);
 
+
+
         btnSiguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

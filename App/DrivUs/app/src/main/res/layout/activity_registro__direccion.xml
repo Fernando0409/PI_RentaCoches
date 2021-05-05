@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:hint="Codigo Postal"
-        android:maxLength="6"
+        android:maxLength="5"
         android:inputType="number"
         android:textColor="#FFFFFF"
         android:textColorHint="#D8D7D7"
