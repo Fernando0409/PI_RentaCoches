@@ -29,22 +29,22 @@ public class Registro_Genero extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(mujer.isChecked()){
-                    genero_usr ="mujer";
+                    genero_usr ="2";
                 } else if(hombre.isChecked()){
-                    genero_usr = "hombre";
+                    genero_usr = "1";
                 }
                 String nombre_usr = getIntent().getStringExtra("nombre(s)_usr_1");
                 String ApellidoP_usr = getIntent().getStringExtra("apellidoP_usr_1");
                 String ApellidoM_usr = getIntent().getStringExtra("apellidoM_usr_1");
                 String fecha_usr = getIntent().getStringExtra("fecha_usr_1");
 
-                Intent telefono_activity = new Intent(Registro_Genero.this,Registro_Telefono.class);
-                telefono_activity.putExtra("nombre(s)_usr_2",nombre_usr);
-                telefono_activity.putExtra("apellidoP_usr_2",ApellidoP_usr);
-                telefono_activity.putExtra("apellidoM_usr_2",ApellidoM_usr);
-                telefono_activity.putExtra("fecha_usr_2",fecha_usr);
-                telefono_activity.putExtra("genero_usr_2",genero_usr);
-                startActivity(telefono_activity);
+                Intent direccion_activity = new Intent(Registro_Genero.this,Registro_Direccion.class);
+                direccion_activity.putExtra("nombre(s)_usr_2",nombre_usr);
+                direccion_activity.putExtra("apellidoP_usr_2",ApellidoP_usr);
+                direccion_activity.putExtra("apellidoM_usr_2",ApellidoM_usr);
+                direccion_activity.putExtra("fecha_usr_2",fecha_usr);
+                direccion_activity.putExtra("genero_usr_2",genero_usr);
+                startActivity(direccion_activity);
 
             }
         });

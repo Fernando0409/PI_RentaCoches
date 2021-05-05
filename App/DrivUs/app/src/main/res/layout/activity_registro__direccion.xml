@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="@drawable/login">
+    android:background="@drawable/login"
+    tools:context=".Registro_Direccion">
 
     <TextView
         android:id="@+id/textView"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_regular"
-        android:text="¿Cómo te llamas?"
+        android:text="Dirección"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,11 +48,11 @@
         app:layout_constraintVertical_bias="0.342" />
 
     <EditText
-        android:id="@+id/editUsername"
+        android:id="@+id/editCalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="Nombre(s)"
+        android:hint="Calle"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHint="#D8D7D7"
@@ -64,11 +64,28 @@
         app:layout_constraintVertical_bias="0.064" />
 
     <EditText
-        android:id="@+id/editLastnameP"
+        android:id="@+id/editNumCasa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="Apellido Paterno"
+        android:hint="Numero de Casa"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D8D7D7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCalle"
+        app:layout_constraintVertical_bias="0.064" />
+
+
+    <EditText
+        android:id="@+id/editColonia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Colonia"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHint="#D8D7D7"
@@ -76,24 +93,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editNumCasa"
         app:layout_constraintVertical_bias="0.074" />
 
     <EditText
-        android:id="@+id/editLastnameM"
+        android:id="@+id/editCodigoPostal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
-        android:hint="Apellido Materno"
-        android:inputType="text"
+        android:hint="Codigo Postal"
+        android:maxLength="6"
+        android:inputType="number"
         android:textColor="#FFFFFF"
         android:textColorHint="#D8D7D7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editLastnameP"
-        app:layout_constraintVertical_bias="0.122" />
+        app:layout_constraintTop_toBottomOf="@+id/editColonia"
+        app:layout_constraintVertical_bias="0.074" />
 
     <Button
         android:id="@+id/btnNext"
@@ -104,7 +122,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editLastnameM"
-        app:layout_constraintVertical_bias="0.316" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editCodigoPostal"
+        app:layout_constraintVertical_bias="0.272" />
 </androidx.constraintlayout.widget.ConstraintLayout>

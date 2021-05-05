@@ -37,7 +37,7 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
         bnConfirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ingresar_datos("http://192.168.1.71/drivus_app_php/registro_ususarios.php");
+                ingresar_datos("http://192.168.1.74/drivus_app_php/registro_ususarios.php");
             }
         });
     }
@@ -54,17 +54,21 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
             etPasswordConfirm.setError("Compruebe Contraseña");
         } else {
             if (etUser_password.equals(etUser_password_confirm)) {
-                String nombre_usr = getIntent().getStringExtra("nombre(s)_usr_3");
-                String ApellidoP_usr = getIntent().getStringExtra("apellidoP_usr_3");
-                String ApellidoM_usr = getIntent().getStringExtra("apellidoM_usr_3");
-                String fecha_usr = getIntent().getStringExtra("fecha_usr_3");
-                String genero_usr = getIntent().getStringExtra("genero_usr_3");
-                String telefono_usr = getIntent().getStringExtra("tel_usr_3");
+                String nombre_user = getIntent().getStringExtra("nombre(s)_usr_4");
+                String ApellidoP_user = getIntent().getStringExtra("apellidoP_usr_4");
+                String ApellidoM_user = getIntent().getStringExtra("apellidoM_usr_4");
+                String fecha_user = getIntent().getStringExtra("fecha_usr_4");
+                String genero_user = getIntent().getStringExtra("genero_usr_4");
+                String calle_user = getIntent().getStringExtra("calle_usr_4");
+                String numCasa_user = getIntent().getStringExtra("numCasa_usr_4");
+                String colonia_user = getIntent().getStringExtra("colonia_usr_4");
+                String cp_user = getIntent().getStringExtra("cp_usr_4");
+                String telefono_user = getIntent().getStringExtra("tel_usr_4");
 
-                StringRequest respuesta = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
+                StringRequest respuesta = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(RegistroFinalUsuarioEmail.this, "USUARIO REGISTRADO", Toast.LENGTH_LONG).show();
+                        Toast.makeText(RegistroFinalUsuarioEmail.this, nombre_user + ApellidoP_user + ApellidoM_user + fecha_user + genero_user + calle_user + numCasa_user + colonia_user + cp_user + telefono_user + etUser_Email + etUser_password,Toast.LENGTH_LONG).show();
                     }
                 }, new Response.ErrorListener() {
                     @Override
@@ -75,12 +79,16 @@ public class RegistroFinalUsuarioEmail extends AppCompatActivity {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String, String> parametros = new HashMap<String, String>();
-                        parametros.put("nombre", nombre_usr);
-                        parametros.put("apellidop", ApellidoP_usr);
-                        parametros.put("apellidom", ApellidoM_usr);
-                        parametros.put("fecha_nac", fecha_usr);
-                        parametros.put("genero", genero_usr);
-                        parametros.put("telefono", telefono_usr);
+                        parametros.put("nombre", nombre_user);
+                        parametros.put("apellidop", ApellidoP_user);
+                        parametros.put("apellidom", ApellidoM_user);
+                        parametros.put("fecha_nac", fecha_user);
+                        parametros.put("genero", genero_user);
+                        parametros.put("calle",calle_user);
+                        parametros.put("num_casa",numCasa_user);
+                        parametros.put("colonia",colonia_user);
+                        parametros.put("cpostal",cp_user);
+                        parametros.put("telefono", telefono_user);
                         parametros.put("correo", etUser_Email);
                         parametros.put("contraseña", etUser_password);
                         return parametros;
