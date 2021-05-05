@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleInventario.css">
+
+        <title>Drivus - Socios</title>
+    </head>
+    <body>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
+            </div>
+            <a href="#about"> <i class='bx bx-home' ></i> Incio</a>
+            <a href="#services"><i class='bx bx-user' ></i>Perfil</a>
+            <button class="dropdown-btn"> <i class='bx bx-car ' ></i></i> Autos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Inventario</a>
+                <a href="#">Registro</a>
+            </div>
+            <button class="dropdown-btn"> <i class='bx bxs-user-plus' ></i> Socios
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Lista</a>
+                <a href="#">Nuevo Socio</a>
+            </div>
+            <button><i class='bx bx-log-out '></i> Cerrar sesion</button>
+        </div>
+        <div class="container">
+            <div class="barraLateral">
+                <div class="elementos">
+                    <a href=""><i class='bx bxs-bell bx-sm' id="notificaciones"></i></a>
+                    <a href=""><p id="nombre">Lorem Lorencio</p></a>
+                    <a href=""><i id="user" class='bx bx-user bx-sm'></i></a>
+                </div>
+            </div>
+            <div id="miniContainer">
+                <div id="cabecera"><h3>Lista de Socios</h3></div>
+                <div class="tabla">
+                    <table border="1">
+                        <tr>
+                            <th>No. de Socio</th>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Email</th>
+                            <th>Telefono</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>#010</td>   
+                            <td>Natividad del Carmen</td>
+                            <td>Antonio</td>
+                            <td>Vazquez</td>
+                            <td>antonio_vaz@gmail.com</td>
+                            <td>3140985634</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>#011</td>
+                            <td>Mario Hazael</td>
+                            <td>Morales</td>
+                            <td>Montenegro</td>
+                            <td>morales_mon@gmail.com</td>
+                            <td>31485603721</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>#012</td>
+                            <td>Miguel Angel</td>
+                            <td>Garcia</td>
+                            <td>Sanchez</td>
+                            <td>garcia_san@gmail.com</td>
+                            <td>3149712037</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>#013</td>
+                            <td>Luis Fernando</td>
+                            <td>Martinez</td>
+                            <td>Silva</td>
+                            <td>martinez_sil@gmail.com</td>
+                            <td>3141315220</td>
+                            <td><button>Ver detalles</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="datosSocio">
+                    <div id="cabeceraSocio"><h3>Detalles del socio</h3></div>
+                    <div id="infoSocio">
+                        <img id="imgSocio" src="../resources/img/user_icon.png" alt="" width="180px" height="180px">
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p class="negritas">Nombre:</p> <p>Antonio Vazquez Natividad del Carmen</p>
+                            </div>
+                            <div class="elemento2">
+                                <p class="negritas">Fecha de nacimiento:</p> <p>05/12/1999   </p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p class="negritas">Colonia:</p> <p>Miramar</p>
+                            </div>
+                            <div class="elemento2">
+                                <p class="negritas">Fecha de contratacion:</p> <p>27/10/2017</p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p class="negritas">Calle:</p> <p>Ostras #187</p>
+                            </div>
+                            <div class="elemento2">
+                                <p class="negritas">Correo Electronico:</p> <p>antonio_vaz@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="filas">
+                            <div class="elemento1">
+                                <p class="negritas">Codigo Postal:</p> <p>28301</p>
+                            </div>
+                            <div class="elemento2">
+                                <p class="negritas">Telefono:</p> <p>3140985634</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/main.js"></script>    
+    </body>
+</html>
