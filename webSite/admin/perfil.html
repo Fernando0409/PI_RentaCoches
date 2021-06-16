@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Drivus - Inicio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Bootstrapp y css -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="../css/style.css">
+
+        <title>Drivus - Inicio</title>
     </head>
     <body>
         <div id="sidebar">
@@ -34,7 +38,7 @@
             <button> <i class='bx bx-log-out '></i> Cerrar sesion</button>
         </div> 
 
-        <div class="container">
+        <div class="contenedor">
             <div class="barraLateral">
                 <div class="elementos">
                     <a href=""><i class='bx bxs-bell bx-sm' id="notificaciones"></i></a>
@@ -43,66 +47,58 @@
                 </div>
             </div>
             <div id="formulario">
-                <div id="cabecera"><h3>Perfil</h3></div>
-                <form action="#" method="post">
-                    <div id="fotografia">
-                        <img id="img_usuario" src="../resources/img/user_icon.png" alt="Usuario">
-                        <label id="text" for="imagenUser">Seleccionar foto</label>
-                        <input type="file" name="" id="imagenUser">
-                    </div>
-                    <div class="inputsForm">
-                        <div class="row1">
-                            <div class="elemento1">
-                                <label for="aPaterno" class="label">Apellido Paterno</label>
-                                <input type="text" name="" id="" class="input">    
-                            </div>
-                            <div class="elemento2">
-                                <label for="aPaterno" class="label">Apellido Materno</label>
-                                <input type="text" name="" id="" class="input">     
-                            </div>
-                            <div class="elemento2">
-                                <label for="aPaterno" class="label">Nombre</label>
-                                <input type="text" name="" id="" class="input">
-                            </div>
+                <form>
+                    <div class="fila">
+                        <div class="mb-3">
+                            <label for="aPaterno" class="form-label">Apellido Paterno: </label>
+                            <input type="text" class="form-control" id="aPaterno" placeholder="Apellido Paterno" required>
                         </div>
-                        <div class="row2">
-                            <div class="elemento1">
-                                <label for="aPaterno" class="label">Email</label>
-                                <input type="text" name="" id="" class="input">
-                            </div>
-                            <div class="elemento2">
-                                <label for="aPaterno" class="label">Nacimiento</label>
-                                <input type="text" name="" id="" class="input">    
-                            </div>
-                            <div class="elemento3">
-                                <label for="aPaterno" class="label">Telefono</label>
-                                <input type="text" name="" id="" class="input">
-                            </div>
+                        <div class="mb-3">
+                            <label for="aMaterno" class="form-label">Apellido Materno: </label>
+                            <input type="text" class="form-control" id="aMaterno" required>
                         </div>
-                        <div class="row3">
-                            <div class="elemento1">
-                                <label for="aPaterno" class="label">Colonia</label> 
-                                <input type="text" name="" id="" class="input">
-                            </div>
-                            <div class="elemento2">
-                                <label for="aPaterno" class="label">Calle</label> 
-                                <input type="text" name="" id="" class="input">    
-                            </div>
-                            
-                            <div class="elemento3">
-                                <label for="aPaterno" class="label">Numero de casa</label>
-                                <input type="text" name="" id="" class="input">
-                            </div>
-
-                            <div class="elemento4">
-                                <label for="cp" class="label">Codigo Postal</label>
-                                <input type="text" name="" id="" class="input">
-                            </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre: </label>
+                            <input type="text" class="form-control" id="nombre" required>
                         </div>
                     </div>
-                    <button id="update" type="submit">Actualizar</button>
-                    <button id="cancel" type="reset">Cancelar</button>
-                </form>
+                    <!-- Email nacimiento telefono -->
+                    <div class="fila">
+                        <div class="mb-3">
+                            <label for="emailUser" class="form-label">Email: </label>
+                            <input type="email" class="form-control" id="emailUser" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="birthday" class="form-label">Fecha de nacimiento: </label>
+                            <input type="date" class="form-control" id="birthday" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono: </label>
+                            <input type="tel" class="form-control" id="telefono" required>
+                        </div>
+                    </div>
+                    <!-- Colonia calle no.casa cp -->
+                    <div class="fila">
+                        <div class="mb-3">
+                            <label for="colonia" class="form-label">Colonia: </label>
+                            <input type="text" class="form-control" id="colonia" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="calle" class="form-label">Callle: </label>
+                            <input type="text" class="form-control" id="calle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="noCasa" class="form-label">No. casa: </label>
+                            <input type="text" class="form-control" id="noCasa" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="codigoPostal" class="form-label">Codigo Postal: </label>
+                            <input type="text" class="form-control" id="codigoPostal" required>
+                        </div>    
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar datos</button>
+                  </form>
             </div>
         </div>
 
