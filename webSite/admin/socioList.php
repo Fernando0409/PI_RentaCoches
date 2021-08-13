@@ -40,7 +40,7 @@
                             Lista de Socios - DrivUs
                         </div>
                         <div class="card-body">
-                            <a href="newEmpleado.html"><span class="btn btn-primary"> 
+                            <a href="newEmpleado.html"><span class="btn btn-primary">
                                 Agregar nuevo <span class="fa fa-plus-circle"></span></a>
                             </span>
                             <hr>
@@ -53,7 +53,7 @@
                 </div> <!-- Col-sm-12-->
             </div>
         </div> <!-- container -->
-        
+
     <!-- Modal para editar  usuarios -->
 
         <!-- Modal -->
@@ -76,10 +76,10 @@
 
                         <label for="calleU">Calle</label>
                         <input type="text" class="form-control input-xs" id="calleU" name="calleU">
-                        
+
                         <label for="noCasaU">No. Casa</label>
                         <input type="text" class="form-control input-xs" id="noCasaU" name="noCasaU">
-                        
+
                         <label for="cpU">Codigo Postal</label>
                         <input type="text" class="form-control input-xs" id="cpU" name="cpU">
                     </form>
@@ -95,14 +95,14 @@
             <script src="../js/main.js"></script>
 
     </body>
-    
+
 </html>
 
 
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		
+
 		$('#btnActualizar').click(function(){
 			datos=$('#formEditar').serialize();
 
@@ -139,7 +139,7 @@
                 datos = jQuery.parseJSON(r);
                 $('#idEmpleado').val(datos['id']);
                 $('#telefonoU').val(datos['telefono']);
-                $('#coloniaU').val(datos['colonia']);     
+                $('#coloniaU').val(datos['colonia']);
                 $('#calleU').val(datos['calle']);
                 $('#noCasaU').val(datos['noCasa']);
                 $('#cpU').val(datos['cp']);
@@ -148,8 +148,8 @@
     }
 
     function eliminarDatos(idEmpleado){
-        alertify.confirm('Eliminar empleado', '¿Continuar?', 
-                function(){ 
+        alertify.confirm('Eliminar empleado', '¿Continuar?',
+                function(){
                     $.ajax({
                         type:"POST",
                         data:"idEmpleado="+idEmpleado,
@@ -163,8 +163,8 @@
                                 alertify.error("No se pudo proceder.")
                         }
                     });
-                }, 
-                function(){ 
+                },
+                function(){
                 });
     }
 </script>

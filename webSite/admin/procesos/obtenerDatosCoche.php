@@ -3,5 +3,7 @@
 	require_once '../clases/crud.php';
 
 	$obj = new crud();
-	
+
 	echo json_encode($obj->obtenerDatosCoche($_POST['idCoche']));
+
+	?>

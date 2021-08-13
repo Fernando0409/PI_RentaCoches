@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <?php require_once 'scripts.php'; ?>
 
     <title>DrivUs - New Car</title>
@@ -155,7 +155,7 @@
                 <div class="fila">
                     <div class="mb-3">
                         <label for="descripcion" class="form-label">Descripci&oacute;n: </label>
-                        <textarea type="text" class="form-control" id="descripcion" name="descripcion" rows="5" style="width: 400px;" required></textarea>
+                        <textarea type="text" class="form-control" id="descripcion" name="descripcion" rows="5" style="width: 400px;"></textarea>
                     </div>
                 </div>
                 <button id="btnGuardarCoches" class="btn btn-primary">Guardar datos</button>
